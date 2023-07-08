@@ -1,3 +1,4 @@
 fn main(x : Field) {
-    assert((x == 123) | (x == 456) | (x == 789));
+    let val = x as u32;
+    assert((val < 6) | (val != 0));
 }
